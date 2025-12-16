@@ -1,11 +1,7 @@
-import { SignUp } from '@clerk/nextjs';
+import SignUpView from '@/app/modules/auth/ui/views/sign-up-view';
 
 function SignUpPage() {
-  return (
-    <div>
-      <SignUp />
-    </div>
-  );
+  return <SignUpView />;
 }
 
 export default SignUpPage;
