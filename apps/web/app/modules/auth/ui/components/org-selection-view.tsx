@@ -1,7 +1,6 @@
 import { OrganizationList } from '@clerk/nextjs';
-import React from 'react';
 
-function OrgSelectView() {
+function OrgSelectionView() {
   return (
     <OrganizationList
       afterCreateOrganizationUrl={'/'}
@@ -12,4 +11,4 @@ function OrgSelectView() {
   );
 }
 
-export default OrgSelectView;
+export default OrgSelectionView;

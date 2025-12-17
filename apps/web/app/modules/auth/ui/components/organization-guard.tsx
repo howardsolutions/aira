@@ -1,14 +1,16 @@
 import { useOrganization } from '@clerk/nextjs';
 import { ReactNode } from 'react';
+import { AuthLayout } from '../layouts/auth-layout';
+import OrgSelectionView from './org-selection-view';
 
 function OrganizationGuard({ children }: { children: ReactNode }) {
   const { organization } = useOrganization();
 
   if (!organization) {
     return (
-      <div>
-        <p>Create An Organization</p>
-      </div>
+      <AuthLayout>
+        <OrgSelectionView />
+      </AuthLayout>
     );
   }
 
