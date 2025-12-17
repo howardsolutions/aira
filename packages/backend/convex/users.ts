@@ -13,13 +13,13 @@ export const getMany = query({
 export const add = mutation({
     args: {},
     handler: async (ctx) => {
-        const identity = ctx.auth.getUserIdentity();
+        const identity = await ctx.auth.getUserIdentity();
 
         if (identity === null) {
             throw new Error("Not authenticated")
         }
 
-        const orgId = identity?.orgId as string;
+        const orgId = identity.orgId as string;
 
         if (!orgId) {
             throw new Error("Missing Organization")

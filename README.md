@@ -1,6 +1,6 @@
-# shadcn/ui monorepo template
+# AIRA B2B AI SaaS Support Platform with Monorepo Architecture
 
-This template is for creating a monorepo with shadcn/ui.
+- Techstack: Nextjs, React, Convex, Turborepo, Vapi for AI Assistant, AWS...
 
 ## Usage
 
