@@ -19,7 +19,7 @@ const vapiStatusInitialState = {
 }
 
 export const useVapi = () => {
-    const [vapi, _] = useState<Vapi | null>(() => new Vapi("testing-vapi-key"));
+    const [vapi, _] = useState<Vapi | null>(() => new Vapi("017a1539-f35b-4a43-826f-c865b013de51"));
 
     const [vapiStatus, setVapiStatus] = useState<VapiState>(vapiStatusInitialState);
 
@@ -101,7 +101,7 @@ export const useVapi = () => {
             }
         });
 
-        if (vapi) vapi.start("testing-vapi-api-here")
+        if (vapi) vapi.start("904eaf1d-1c0f-4607-a74f-96984dbc6a71")
     };
 
 
