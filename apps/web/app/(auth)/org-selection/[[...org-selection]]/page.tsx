@@ -1,4 +1,4 @@
-import OrgSelectionView from '@/app/modules/auth/ui/components/org-selection-view';
+import OrgSelectionView from '@/modules/auth/ui/components/org-selection-view';
 
 function OrgSelectionPage() {
   return <OrgSelectionView />;

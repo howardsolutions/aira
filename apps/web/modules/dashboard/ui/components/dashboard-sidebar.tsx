@@ -2,26 +2,26 @@
 
 import { OrganizationSwitcher, UserButton } from '@clerk/nextjs';
 import {
-    Sidebar,
-    SidebarContent,
-    SidebarFooter,
-    SidebarGroup,
-    SidebarGroupContent,
-    SidebarGroupLabel,
-    SidebarHeader,
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem,
-    SidebarRail,
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarRail,
 } from '@workspace/ui/components/sidebar';
 import { cn } from '@workspace/ui/lib/utils';
 import {
-    CreditCardIcon,
-    InboxIcon,
-    LayoutDashboardIcon,
-    LibraryBigIcon,
-    Mic,
-    PaletteIcon,
+  CreditCardIcon,
+  InboxIcon,
+  LayoutDashboardIcon,
+  LibraryBigIcon,
+  Mic,
+  PaletteIcon,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
