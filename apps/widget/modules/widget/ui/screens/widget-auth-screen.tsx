@@ -32,6 +32,7 @@ export const WidgetAuthScreen = () => {
   const setScreen = useSetAtom(screenAtom);
 
   const organizationId = useAtomValue(organizationIdAtom);
+  
   const setContactSessionId = useSetAtom(
     contactSessionIdAtomFamily(organizationId || '')
   );
