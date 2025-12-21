@@ -18,9 +18,9 @@ import { useAtomValue, useSetAtom } from 'jotai';
 import WidgetHeader from '../components/widget-header';
 
 import {
+  screenAtom,
   contactSessionIdAtomFamily,
   organizationIdAtom,
-  screenAtom,
 } from '../../atoms/widget-atoms';
 
 const formSchema = z.object({
