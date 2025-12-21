@@ -44,7 +44,7 @@ export const WidgetAuthScreen = () => {
     },
   });
 
-  const createContactSession = useMutation(api.public.contactSessions.create);
+  const createContactSession = useMutation(api.public.contactSession.create);
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     if (!organizationId) {

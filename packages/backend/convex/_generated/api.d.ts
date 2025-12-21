@@ -8,7 +8,7 @@
  * @module
  */
 
-import type * as public_contacctSession from "../public/contacctSession.js";
+import type * as public_contacctSession from "../public/contactSession.js";
 import type * as users from "../users.js";
 
 import type {
