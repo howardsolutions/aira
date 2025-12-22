@@ -12,9 +12,9 @@ import {
   vapiSecretsAtom,
   widgetSettingsAtom,
 } from '@/modules/widget/atoms/widget-atoms';
-import { WidgetHeader } from '@/modules/widget/ui/components/widget-header';
 import { useAction, useMutation, useQuery } from 'convex/react';
 import { api } from '@workspace/backend/_generated/api';
+import WidgetHeader from '../components/widget-header';
 
 type InitStep = 'org' | 'session' | 'settings' | 'vapi' | 'done';
 
