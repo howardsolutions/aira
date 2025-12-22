@@ -11,14 +11,14 @@ export const validate = mutation({
         organizationId: v.string(),
     },
 
-    handler: async (ctx, args) => {
+    handler: async (_, args) => {
         try {
             await clerkClient.organizations.getOrganization({
                 organizationId: args.organizationId
             })
 
             return { valid: true }
-        } catch (err) {
+        } catch {
             return {
                 valid: false,
                 reason: "Organization not found"
