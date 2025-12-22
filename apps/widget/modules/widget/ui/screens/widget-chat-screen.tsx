@@ -1,8 +1,8 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
 import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
 import { Button } from '@workspace/ui/components/button';
 import { useAtomValue, useSetAtom } from 'jotai';
@@ -15,11 +15,7 @@ import {
   screenAtom,
   widgetSettingsAtom,
 } from '../../atoms/widget-atoms';
-import { useAction, useQuery } from 'convex/react';
-import { api } from '@workspace/backend/_generated/api';
-import { Form, FormField } from '@workspace/ui/components/form';
 
-import { useMemo } from 'react';
 import WidgetHeader from '../components/widget-header';
 
 const formSchema = z.object({
