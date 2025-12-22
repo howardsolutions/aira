@@ -3,7 +3,7 @@ import { v } from "convex/values";
 
 export default defineSchema({
     conversations: defineTable({
-        threadId: v.string(),
+        threadId: v.string(), // reference to the AI chat
         organizationId: v.string(),
         contactSessionId: v.id("contactSessions"),
         status: v.union(
